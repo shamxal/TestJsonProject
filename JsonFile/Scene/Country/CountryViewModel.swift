@@ -8,6 +8,7 @@
 import UIKit
 
 class CountryViewModel {
+    
     var countryItems = [Country]()
     
     func getCountryData(completion: (() -> Void)) {

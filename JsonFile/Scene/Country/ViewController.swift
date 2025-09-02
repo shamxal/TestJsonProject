@@ -20,8 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegat
     
     func setup() {
         table.delegate = self
-        table.dataSource = self
-        
+        table.dataSource = self        
         viewModel.getCountryData {
             self.table.reloadData()
         }
