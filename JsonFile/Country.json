@@ -1,0 +1,43 @@
+[
+    {
+        "countryName": "Azerbaijan",
+        "cities": [
+            {
+                "name": "Baku",
+                "museum": {
+                    "name": "History Museum",
+                    "about": "klasd;oakd;laskdl;kd;sak;laskd;laskdl;"
+                }
+            },
+            {
+                "name": "Ganja",
+                "museum": {
+                    "name": "History Museum",
+                    "about": "klasd;oakd;laskdl;kd;sak;laskd;laskdl;"
+                }
+            },
+            {
+                "name": "Sheki",
+                "museum": {
+                    "name": "History Museum",
+                    "about": "klasd;oakd;laskdl;kd;sak;laskd;laskdl;"
+                }
+            }
+        ]
+    },
+    {
+        "countryName": "Turkiye",
+        "cities": [
+            {
+                "name": "Istanbul",
+                "museum": {
+                    "name": "Ayasofiya Museum",
+                    "about": "klasd;oakd;laskdl;kd;sak;laskd;laskdl;"
+                }
+            }
+        ]
+    },
+    {
+        "countryName": "France"
+    }
+]

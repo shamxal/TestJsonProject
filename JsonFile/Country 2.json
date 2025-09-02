@@ -1,0 +1,12 @@
+[
+    {
+        "categoryName": "Burger",
+        "categoryImage": "burger.jpg",
+        "foods": [
+            {
+                "foodName": "Cheee Burger",
+                "foodImage": "cheeeeees.jpg",
+            }
+        ]
+    }
+]
