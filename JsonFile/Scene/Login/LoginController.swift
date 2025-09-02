@@ -17,6 +17,7 @@ class LoginController: UIViewController {
         super.viewDidLoad()
         
         viewModel.readUserData()
+        
     }
     
     @IBAction func registerAction(_ sender: Any) {
@@ -27,7 +28,6 @@ class LoginController: UIViewController {
     @IBAction func loginAction(_ sender: Any) {
         if let email = emailTextField.text,
            let password = passwordTextField.text {
-
             if viewModel.isUserExist(email: email, password: password) {
                 let controller = storyboard?.instantiateViewController(withIdentifier: "\(ViewController.self)")
                 navigationController?.show(controller!, sender: nil)
