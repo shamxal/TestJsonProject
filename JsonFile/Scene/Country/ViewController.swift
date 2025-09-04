@@ -43,13 +43,18 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         if let cities = viewModel.countryItems[indexPath.row].cities,
            !cities.isEmpty {
             let controller = storyboard?.instantiateViewController(withIdentifier: "\(CityController.self)") as! CityController
-            controller.country = viewModel.countryItems[indexPath.row]
+            
+            
+            let data = viewModel.countryItems[indexPath.row]
+            
+            controller.viewModel = CityViewModel(country: data)
+            
+            controller.viewModel = .init(country: data)
+            
+            controller.viewModel?.country = data
+            
             navigationController?.show(controller, sender: nil)
         } else {
-//            let alertController = UIAlertController(title: "Error", message: "Burda sheher yoxdur", preferredStyle: .alert)
-//            let ok = UIAlertAction(title: "OK", style: .default)
-//            alertController.addAction(ok)
-//            present(alertController, animated: true)
             showErrorAlert()
         }
     }

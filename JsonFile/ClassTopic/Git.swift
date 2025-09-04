@@ -8,6 +8,6 @@
 import Foundation
 
 //Command
-
+    // - git add, git commit, git push, git pull, git merge etc.
 //Branch
     // - master (main), develop, feature branchler
